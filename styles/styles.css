@@ -305,8 +305,9 @@ footer {
         border-bottom: none;
     }
 
-    /* places structural grid side-by-side split layout on desktop */
+    /* Stacks elements safely to bypass horizontal scrollbars on low viewports */
     .content-split {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }

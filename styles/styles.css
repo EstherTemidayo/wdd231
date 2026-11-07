@@ -53,9 +53,9 @@ header {
     font-size: 18px;
 }
 
-/* Hamburger button for small screens */
+/* Mobile defaults for hamburger button and menu */
 #menu-btn {
-    display: none;
+    display: block;
     font-size: 24px;
     background: none;
     border: 1px solid #999999;
@@ -63,30 +63,31 @@ header {
     cursor: pointer;
 }
 
-/* Horizontal navigation using CSS Flex for large screens */
 #navbar {
+    display: none;
     background-color: #333333;
     margin-bottom: 25px;
+}
+
+#navbar.open {
+    display: block;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    /* Fulfills Large-screen horizontal navigation using CSS Flex */
-}
-
-.nav-links li {
-    flex: unset;
+    flex-direction: column;
 }
 
 .nav-links li a {
     display: block;
     color: #ffffff;
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 12px;
     font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #444444;
     transition: background-color 0.2s ease;
-    /* Smooth, no layout-twitching transition */
 }
 
 /* Hover effect for menu items */
@@ -102,7 +103,7 @@ header {
 }
 
 /* ==========================================================================
-   3. MULTI-COLUMN CONTENT LAYOUT (Prevents simple single-column layout)
+   3. MULTI-COLUMN CONTENT LAYOUT (Mobile-First Setup)
    ========================================================================== */
 .page-heading {
     font-size: 28px;
@@ -112,11 +113,10 @@ header {
     padding-bottom: 5px;
 }
 
-/* Multi-column default layout grid */
+/* Default layout: Single column base structure */
 .content-split {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* Asymmetric grid separation */
+    grid-template-columns: 1fr;
     gap: 25px;
     margin-bottom: 25px;
 }
@@ -223,6 +223,19 @@ a.course-row:hover {
     background-color: #b5b5b5;
 }
 
+/* Color distinction variants for javascript courses listing lists */
+a.course-row.completed {
+    background-color: #a4c2a8;
+    border: 2px solid #2e5a36;
+    color: #1e3d23;
+}
+
+a.course-row.incomplete {
+    background-color: #e0a8a8;
+    border: 2px solid #8a2b2b;
+    color: #4a1515;
+}
+
 .credits-total {
     text-align: center;
     font-weight: 700;
@@ -258,7 +271,6 @@ footer {
 
 .icon-svg:hover {
     transform: scale(1.1);
-    /* Safe non-twitching hover scale change */
 }
 
 .footer-item,
@@ -273,46 +285,28 @@ footer {
 }
 
 /* ==========================================================================
-   6. RESPONSIVE BREAKPOINT (Small-Screen Hamburger Layout)
+   6. RESPONSIVE DESKTOP LAYOUT SHIFTS (Screens wider than 768px)
    ========================================================================== */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    .site-container {
-        padding: 12px;
-    }
-
+@media (min-width: 769px) {
     #menu-btn {
-        display: block;
-        /* Fulfills small-screen hamburger like navigation display trigger */
+        display: none;
     }
 
     #navbar {
-        display: none;
-        /* Collapses menu items natively */
-    }
-
-    /* Opened overlay configuration triggered via JavaScript state changes */
-    #navbar.open {
         display: block;
     }
 
     .nav-links {
-        flex-direction: column;
-        /* Re-stacks horizontally inline lists down layout vertically */
+        flex-direction: row;
     }
 
     .nav-links li a {
-        text-align: center;
-        border-bottom: 1px solid #444444;
-        padding: 12px;
+        padding: 14px 20px;
+        border-bottom: none;
     }
 
-    /* Stacks elements safely to bypass horizontal scrollbars on low viewports */
+    /* places structural grid side-by-side split layout on desktop */
     .content-split {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: 2fr 1fr;
     }
 }

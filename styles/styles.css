@@ -149,13 +149,14 @@ header {
     margin-bottom: 0;
 }
 
-/* Prevents images from being squished, distorted, or oversized */
+/* Caps portrait size and centers it inside the card */
 .card-image {
     width: 100%;
-    max-width: 100%;
+    max-width: 260px;
     height: auto;
+    margin: 0 auto;
     object-fit: cover;
-    /* Guarantees no visual squishing distortion */
+    border-radius: 6px;
     border: 1px solid #999999;
     display: block;
 }
@@ -305,9 +306,16 @@ footer {
         border-bottom: none;
     }
 
-    /* Stacks elements safely to bypass horizontal scrollbars on low viewports */
+    /* Places About Me and Meet Me cards side-by-side on desktop */
     .content-split {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    /* Displays course buttons in a 3-column grid on desktop */
+    .courses-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
 }

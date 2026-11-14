@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Eko Trade Hub</title>
+    <meta name="description"
+        content="Connect with verified Lagos manufacturers, everyday retailers, and commercial service providers at Eko Trade Hub.">
+    <meta name="author" content="Esther Olukayode">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:title" content="Member Directory - Eko Trade Hub">
+    <meta property="og:description"
+        content="Discover trusted Lagos bottled water producers, fashion retailers, supermarkets, and logistics partners.">
+    <meta property="og:image" content="https://github.io">
+    <meta property="og:url" content="https://github.io">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS FILES (Normalize first, then small, then larger) -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="brand">
+                <svg class="brand-logo" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+                    <rect width="40" height="40" rx="8" fill="#D97706" />
+                    <path d="M10 28V12h18v4H15v3h11v4H15v5h-5z" fill="#FFFFFF" />
+                </svg>
+                <div class="brand-text">
+                    <span class="brand-title">Eko Trade Hub</span>
+                    <span class="brand-sub">Lagos Chamber of Commerce</span>
+                </div>
+            </div>
+            <button id="menu-btn" aria-label="Toggle navigation menu">☰</button>
+        </div>
+
+        <nav id="primary-nav">
+            <ul class="nav-list">
+                <li><a href="https://esthertemidayo.github.io/wdd231/">Home</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="directory-header">
+            <h1>Lagos Business Directory</h1>
+            <p>Connecting local manufacturers, everyday retailers, and reliable service providers across Eko.</p>
+
+            <div class="controls-bar">
+                <div class="view-buttons" role="group" aria-label="Layout view selection">
+                    <button id="grid-btn" class="view-btn active" aria-pressed="true">⊞ Grid View</button>
+                    <button id="list-btn" class="view-btn" aria-pressed="false">☰ List View</button>
+                </div>
+
+                <div class="sector-filters" role="group" aria-label="Filter by business sector">
+                    <button class="sector-btn active" data-sector="All">All Sectors</button>
+                    <button class="sector-btn" data-sector="Manufacturers">Manufacturers</button>
+                    <button class="sector-btn" data-sector="Retailers">Retailers</button>
+                    <button class="sector-btn" data-sector="Services">Services</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="members-container" class="grid-view">
+            <!-- Dynamically populated by directory.js -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-contact">
+                <h2>Eko Trade Hub</h2>
+                <p>24 Airport Road, Ajao Estate, Isolo, Lagos</p>
+                <p>hello@ekotradehub.org.ng</p>
+                <p>+234 800 356 2426</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            </div>
+
+            <div class="footer-meta">
+                <p>WDD 231 Class Project</p>
+                <p>Esther Olukayode</p>
+                <p>&copy; <span id="currentyear"></span> Eko Trade Hub</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

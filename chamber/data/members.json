@@ -1,0 +1,104 @@
+{
+    "members": [
+        {
+            "name": "CWAY Group Nigeria",
+            "sector": "Manufacturers",
+            "specialization": "Bottled Water & Beverages Production",
+            "address": "Plot 98/100, Oshodi-Apapa Expressway, Isolo, Lagos",
+            "phone": "+234 909 800 0999",
+            "website": "https://cwaygroup.com",
+            "image": "cway-group.webp",
+            "membership": 3
+        },
+        {
+            "name": "Sky Industries Nigeria Ltd",
+            "sector": "Manufacturers",
+            "specialization": "PET Bottles, Preforms & Plastic Closures Production",
+            "address": "44 Osolo Way, Isolo, Lagos",
+            "phone": "+234 905 800 7330",
+            "website": "https://skyindustriesafrica.com",
+            "image": "sky-industries.webp",
+            "membership": 3
+        },
+        {
+            "name": "Promasidor Nigeria Ltd",
+            "sector": "Manufacturers",
+            "specialization": "Dairy, Milk Powder & Packaged Food Production",
+            "address": "3A & B Cowbell Way, Isolo Industrial Estate, Lagos",
+            "phone": "+234 01 270 7772",
+            "website": "http://promasidor.ng",
+            "image": "promasidor.webp",
+            "membership": 3
+        },
+        {
+            "name": "Vitafoam Nigeria Plc",
+            "sector": "Manufacturers",
+            "specialization": "Mattresses, Polyurethane Foam & Bedding Production",
+            "address": "140 Oba Akran Avenue, Industrial Estate, Ikeja, Lagos",
+            "phone": "+234 01 280 5072",
+            "website": "https://vitafoamng.com",
+            "image": "vitafoam.webp",
+            "membership": 2
+        },
+        {
+            "name": "Ruff 'n' Tumble",
+            "sector": "Retailers",
+            "specialization": "Casual Wears & Afrocentric Apparel Retail",
+            "address": "Adeniran Ogunsanya Street, Surulere, Lagos",
+            "phone": "+234 809 783 3688",
+            "website": "https://ruffntumblekids.com",
+            "image": "ruff-n-tumble.webp",
+            "membership": 3
+        },
+        {
+            "name": "Prince Ebeano Supermarket",
+            "sector": "Retailers",
+            "specialization": "Groceries, Fresh Produce & Household Retail",
+            "address": "Plot 9 Northern Business District, Admiralty Road, Lekki Phase 1, Lagos",
+            "phone": "+234 802 111 3382",
+            "website": "https://princeebeano.com",
+            "image": "ebeano-supermarket.webp",
+            "membership": 2
+        },
+        {
+            "name": "SLOT Systems Limited",
+            "sector": "Retailers",
+            "specialization": "Mobile Phones, Laptops & Consumer Electronics Retail",
+            "address": "203 Obafemi Awolowo Way, Ikeja, Lagos",
+            "phone": "+234 906 208 3584",
+            "website": "https://slot.ng",
+            "image": "slot-systems.webp",
+            "membership": 2
+        },
+        {
+            "name": "Baxwell Express Solutions",
+            "sector": "Services",
+            "specialization": "Air & Sea Freight Forwarding and Customs Clearance",
+            "address": "Migfo House, 17 Airport Road, Ajao Estate, Isolo, Lagos",
+            "phone": "+234 817 850 0443",
+            "website": "https://baxwellsolution.com",
+            "image": "baxwell-express.webp",
+            "membership": 2
+        },
+        {
+            "name": "Lagos Logistics Limited",
+            "sector": "Services",
+            "specialization": "Same-Day Mainland/Island Dispatch & Van Delivery",
+            "address": "Oshodi-Ikeja Commercial Corridor, Lagos",
+            "phone": "+234 809 555 2190",
+            "website": "https://lagoslogistics.com.ng",
+            "image": "lagos-logistics.webp",
+            "membership": 1
+        },
+        {
+            "name": "A-Plus Distributions Limited",
+            "sector": "Services",
+            "specialization": "Wholesale Soft Drinks & FMCG Distribution",
+            "address": "2 Jagal Close, Oregun, Ikeja, Lagos",
+            "phone": "+234 812 440 7815",
+            "website": "https://aplusdistributionsltd.com",
+            "image": "aplus-distributions.webp",
+            "membership": 1
+        }
+    ]
+}

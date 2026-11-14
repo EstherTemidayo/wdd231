@@ -27,7 +27,10 @@
     }
 
     .nav-list a:hover {
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: var(--navy-text);
+        /* #0F172A Navy Blue */
+        color: var(--white);
+        /* #FFFFFF White Text */
     }
 
     .controls-bar {

@@ -39,8 +39,9 @@ function displayMembers(members) {
                 <h2>${member.name}</h2>
                 <p class="member-sector">${member.sector}</p>
                 <p class="member-spec">${member.specialization}</p>
-                <p class="member-address">${member.address}</p>
-                <p class="member-phone">${member.phone}</p>
+                <p class="member-address">📍 ${member.address}</p>
+                <p class="member-phone">📞 ${member.phone}</p>
+
                 <a href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
             </div>
         `;

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Eko Trade Hub</title>
+    <meta name="description"
+        content="Eko Trade Hub connects Lagos manufacturers, everyday retailers, and commercial service providers with trade opportunities, events, and verified business networks.">
+    <meta name="author" content="Esther Olukayode">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:title" content="Eko Trade Hub - Lagos Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover trusted Lagos bottled water producers, fashion retailers, supermarkets, and logistics partners.">
+    <meta property="og:image" content="https://github.io">
+    <meta property="og:url" content="https://github.io">
+
+    <!-- GOOGLE FONTS: Poppins & Roboto -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="brand" aria-label="Eko Trade Hub Home">
+                <img src="images/ekohub.webp" alt="Eko Trade Hub - Lagos Commerce" class="brand-logo" width="210"
+                    height="58">
+            </a>
+
+            <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav id="primary-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION (Scalable <img> with Overlay CTA) -->
+        <section class="home-hero">
+            <img src="images/lagos.webp" alt="Commercial skyline and trade activity in Lagos, Nigeria"
+                class="hero-banner-img" width="1360" height="480">
+
+            <div class="hero-overlay">
+                <span class="eyebrow">Lagos Chamber of Commerce</span>
+                <h1>Building Stronger Commerce Across Eko City</h1>
+                <p class="hero-subtitle">Connecting verified Lagos manufacturers, wholesalers, everyday retailers, and
+                    reliable service providers across Lagos State.</p>
+                <div class="hero-actions">
+                    <a href="join.html" class="btn-primary">Join the Chamber</a>
+                    <a href="directory.html" class="btn-secondary">Explore Directory ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO ROW: EVENTS & LIVE LAGOS WEATHER -->
+        <section class="home-bento" aria-label="Chamber Events and Lagos Weather">
+            <article class="bento-card events-card">
+                <div class="card-header">
+                    <span class="eyebrow">Upcoming Events</span>
+                    <h2>Trade &amp; Networking Calendar</h2>
+                </div>
+                <ul class="event-list">
+                    <li>
+                        <span class="event-date">NOV 28</span>
+                        <div>
+                            <h3>Isolo &amp; Ikeja Manufacturing Summit</h3>
+                            <p>Industrial Estate Conference Hall, Ikeja • 10:00 AM WAT</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="event-date">DEC 05</span>
+                        <div>
+                            <h3>Lagos FMCG Supply Chain Meetup</h3>
+                            <p>Eko Hotel &amp; Suites, Victoria Island • 2:00 PM WAT</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="event-date">DEC 12</span>
+                        <div>
+                            <h3>SME Export &amp; Customs Workshop</h3>
+                            <p>Eko Trade Hub Secretariat, Ajao Estate • 11:00 AM WAT</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <div class="weather-stack">
+                <article class="bento-card weather-card">
+                    <div class="card-header">
+                        <span class="eyebrow">Live Conditions</span>
+                        <h2>Lagos, Nigeria Weather</h2>
+                    </div>
+                    <div id="current-weather" class="weather-now">
+                        <p class="loading-text">Loading Lagos weather...</p>
+                    </div>
+                </article>
+
+                <article class="bento-card forecast-card">
+                    <h3>3-Day Trade Forecast</h3>
+                    <div id="weather-forecast" class="forecast-grid">
+                        <!-- Populated by home.js -->
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- MEMBER SPOTLIGHTS -->
+        <section class="spotlights-section">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">Featured Partners</span>
+                    <h2>Verified Member Spotlights</h2>
+                </div>
+                <a href="directory.html" class="text-link">View All Members ↗</a>
+            </div>
+
+            <div id="spotlight-container" class="spotlight-grid">
+                <!-- Randomly populated with Gold & Silver members from data/members.json -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-contact">
+                <img src="images/ekohub.webp" alt="Eko Trade Hub - Lagos Commerce" class="footer-logo" width="175"
+                    height="48">
+                <p>24 Airport Road, Ajao Estate, Isolo, Lagos</p>
+                <p><a href="mailto:temdest331@gmail.com">temdest331@gmail.com</a></p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                    </svg>
+                </a>
+                <a href="https://github.io" target="_blank" rel="noopener" aria-label="GitHub Portfolio"
+                    class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-meta">
+                <p>WDD 231 Class Project</p>
+                <p>Esther Olukayode</p>
+                <p>&copy; <span id="currentyear"></span> Eko Trade Hub</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

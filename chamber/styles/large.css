@@ -6,7 +6,6 @@
 
     .brand-logo {
         width: 215px;
-        height: auto;
     }
 
     #menu-btn {
@@ -17,27 +16,17 @@
         display: block;
         width: auto;
         padding-top: 0;
-        background-color: transparent;
     }
 
     .nav-list {
         flex-direction: row;
-        align-items: center;
         gap: 0.35rem;
-    }
-
-    .nav-list a {
-        padding: 0.5rem 1.05rem;
-        font-size: 0.9rem;
     }
 
     main {
         padding: 3rem 2rem 4.5rem;
     }
 
-    /* =========================================================
-       HOME PAGE DESKTOP LAYOUTS
-       ========================================================= */
     .hero-banner-img {
         height: 480px;
     }
@@ -48,26 +37,16 @@
 
     .home-bento {
         grid-template-columns: 1.35fr 1fr;
-        align-items: stretch;
     }
 
     .spotlight-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* =========================================================
-       DIRECTORY PAGE DESKTOP LAYOUTS
-       ========================================================= */
     .controls-bar {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
-    }
-
-    /* Desktop List View Table */
-    #members-container.list-view .member-card {
-        padding: 1rem 1.5rem;
     }
 
     #members-container.list-view .member-info {
@@ -82,22 +61,16 @@
     #members-container.list-view .member-card h2,
     #members-container.list-view .member-spec,
     #members-container.list-view .member-address,
-    #members-container.list-view .member-phone {
-        margin-bottom: 0;
-        justify-self: start;
-    }
-
-    #members-container.list-view .member-card h2 {
-        font-size: 1rem;
+    #members-container.list-view .member-phone,
+    #members-container.list-view .member-card a {
+        margin: 0;
     }
 
     #members-container.list-view .member-card a {
-        margin-top: 0;
         justify-self: end;
         white-space: nowrap;
     }
 
-    /* 3-Column Desktop Footer */
     .footer-grid {
         grid-template-columns: 1.5fr 1fr 1.5fr;
         text-align: left;
@@ -105,7 +78,7 @@
     }
 
     .footer-logo {
-        margin: 0 0 0.65rem 0;
+        margin: 0 0 0.65rem;
     }
 
     .footer-meta {

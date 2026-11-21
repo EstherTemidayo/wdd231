@@ -730,6 +730,31 @@ footer {
     padding-top: 0.5rem;
 }
 
+.sector-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.sector-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--border-light);
+    background-color: var(--white);
+    color: var(--charcoal-soft);
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.82rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .section-heading {
     display: flex;
     flex-wrap: wrap;

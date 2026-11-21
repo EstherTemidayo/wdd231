@@ -27,8 +27,8 @@ if (modEl) modEl.textContent = 'Last Modified: ' + document.lastModified;
 const apiKey = 'b7295a85d252ae46d0ae68dd9acbcd48';
 const lat = 6.5244;
 const lon = 3.3792;
-const weatherUrl = 'https://openweathermap.org' + lat + '&lon=' + lon + '&units=metric&appid=' + apiKey;
-const forecastUrl = 'https://openweathermap.org' + lat + '&lon=' + lon + '&units=metric&appid=' + apiKey;
+const weatherUrl = ['https://', 'api.openweathermap.org', '/data/2.5/weather?lat=', lat, '&lon=', lon, '&units=metric&appid=', apiKey].join('');
+const forecastUrl = ['https://', 'api.openweathermap.org', '/data/2.5/forecast?lat=', lat, '&lon=', lon, '&units=metric&appid=', apiKey].join('');
 
 
 function getWeatherSvg(iconCode) {
